@@ -52,3 +52,11 @@ git config --global user.email johndoe@example.com
 
 ## Opened github repo in local computer
 Open test OK
+
+
+## Branches
+```sh
+git branch #shows all branches
+git branch dev #creates a new branch named dev
+git checkout dev #changes branch to the dev => first time => git push -u origin dev
+```
