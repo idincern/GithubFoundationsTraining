@@ -4,5 +4,5 @@ Press period in your repo to open up web gui codebases.
 
 ## TESTING SH
 ```sh
-test of markdown -> backtick key = altgr + , on my omen
+test of markdown writing style ->  press altgr and comma on keyboard to write backticks. 3 backticks open markdown container
 ```
