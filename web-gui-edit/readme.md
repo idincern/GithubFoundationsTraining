@@ -14,18 +14,26 @@ cd ..
 mkdir tmp
 git clone https://github.com/idincern/GithubFoundationsTraining.git
 cd GithubFoundationsTraining/
-ls -la # to see hidden files in the folder.
-# there is a .git folder in our folder which means that it is a git repo.
+ls -la # to see hidden files in the folder. there is a .git folder in our ws which means that it is a git repo.
 ```
 
-To initialize a git repo, type ``git init``.
+To initialize a git repo, type
+```sh
+git init
+```
 
 Type ``git status`` to see the git repo and staged changes.
 type ``git add .`` to add all changes to staged. Otherwise, write name of the file to add them to the staged changes. If any error occurs, you can reset changes added to the staged changes by using ``git reset``.
 
 To remove git repo(git folder): ``rm -rf .git``
 
-To add a commmit to the staged changes, use ``git commit -m "Add commit message"``.
+```sh
+git commit -m "Add commit message" #To add a commmit to the staged changes
+```
+
+```sh
+git log # shows recent commits to the git tree
+```
 
 ## .gitconfig file
 To see the .gitconfig file, type:
