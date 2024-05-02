@@ -50,3 +50,5 @@ git config --global user.name "John Doe"
 git config --global user.email johndoe@example.com
 ```
 
+## Opened github repo in local computer
+Open test OK
