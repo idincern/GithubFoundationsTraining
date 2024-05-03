@@ -98,7 +98,6 @@ Each commit has its own specific SHA hash ID, which can be checked out to.
 [*] Snapshot of the Content
 ```
 
-## Committing
 ```sh
 git add my-file
 git add. # Add all files
@@ -115,3 +114,32 @@ git commit -m "Initial commit" --allow-empty #Creates an empty commit, useful as
 git commit -m "Message" --author="Author Name <email@example.com>" #Commits with a specified author.
 
 661a91ad3b66926c4591f9d3c73c087906945f3b #Checkout to a specific commit based on SHA hash git checkout 
+```
+
+## Branching
+A git branch is a divergence of the state of the repo.
+
+Branch = Copies of a point in time that have been modified to be different.
+
+Usually there are ``main branch`` and ``production branch``. Development is done in the main branch and sub-main ``feature branch(es)`` and than pushed out to the production branch when ready.
+
+![alt text](<github flow-1.PNG>)
+
+```sh
+git branch #Lists all local branches 
+git branch [branch-name] #Creates a new branch 
+git checkout [branch-name] # Checkout (switch to) a branch 
+git checkout -b [branch name] # Create and checkout a branch 
+git branch -d [branch-name] #Deletes a branch
+git branch -m [old-name] [new-name] # Renames a branch
+git branch -a # Lists both remote and local branches 
+```
+
+#### Branch Memo
+```sh
+git checkout -b my-new-branch 
+#(...)relevant changes to the files
+git add .
+git commit -m "my relevant changes"
+git push -u origin my-new-branch
+```
