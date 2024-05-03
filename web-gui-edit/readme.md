@@ -8,13 +8,12 @@ git commit -m "commit memo"
 git push
 ```
 
-## TESTING SH
+## Testing SH(ell)
 ```sh
 test of markdown writing style ->  press altgr and comma on keyboard to write backticks. 3 backticks open markdown container
 ```
 
-
-## TMP Folder Creation
+## Temp Folder Creation
 ```sh
 cd ..
 mkdir tmp
@@ -60,7 +59,7 @@ git config --global user.email johndoe@example.com
 Open test OK
 
 
-## Branches
+## Branching
 ```sh
 git branch #shows all branches
 git branch dev #creates a new branch named dev
@@ -84,3 +83,35 @@ git stash save my-stash-name #stashes all staged changes with the my-stash-name 
 git stash apply #instead of popping it directly applies stashes
 git stash pop #brings out the stashed changes
 ```
+
+## Committing
+Addition, modification and deletion of files/file contents.
+It doesn't show the whole file, only its changes.
+Each commit has its own specific SHA hash ID, which can be checked out to.
+```sh
+#Components of Git Commit:
+[*] Commit Hash: A unique SHA-1 hash identifier for the commit.
+[*] Author Info: Name and e-mail.
+[*] Commit Message: A description of what changes the commit contains.
+[*] Timestamp: D/T of the commit
+[*] Parent Commit Hash(es)
+[*] Snapshot of the Content
+```
+
+## Committing
+```sh
+git add my-file
+git add. # Add all files
+git rm my-other file # Remove a specific file
+
+git commit -m "Commit message" # Commits staged changes with a message
+
+git commit -a -m "Commit message" # Automatically stages all tracked, modified files before the commit 
+
+git commit --amend #Modifies the most recent commit 
+
+git commit -m "Initial commit" --allow-empty #Creates an empty commit, useful as a placeholder
+
+git commit -m "Message" --author="Author Name <email@example.com>" #Commits with a specified author.
+
+661a91ad3b66926c4591f9d3c73c087906945f3b #Checkout to a specific commit based on SHA hash git checkout 
