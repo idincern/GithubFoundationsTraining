@@ -67,3 +67,9 @@ git branch dev #creates a new branch named dev
 git checkout dev #changes branch to the dev => first time => git push -u origin dev
 # added git graph extension to the local vscode
 ```
+
+## Merging
+```sh
+git checkout dev
+git merge main #merges dev with main-> Makes main up to date. Resolve any conflicts with the main first if there is any.
+```
