@@ -73,3 +73,13 @@ git checkout dev #changes branch to the dev => first time => git push -u origin 
 git checkout dev
 git merge main #merges dev with main-> Makes main up to date. Resolve any conflicts with the main first if there is any.
 ```
+
+## Stashing
+```sh
+#stashing to move staged - unstaged changes in another location
+git stash list #shows stashes
+git stash
+git stash save my-stash-name
+git stash apply
+git stash pop
+```
