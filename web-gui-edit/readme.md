@@ -75,11 +75,12 @@ git merge main #merges dev with main-> Makes main up to date. Resolve any confli
 ```
 
 ## Stashing
+Stashing to move staged - unstaged changes in another location => 
+Beware of this in cloud dev. env. because data may be lost.
 ```sh
-#stashing to move staged - unstaged changes in another location
 git stash list #shows stashes
-git stash
-git stash save my-stash-name
-git stash apply
-git stash pop
+git stash #stashes all staged changes
+git stash save my-stash-name #stashes all staged changes with the my-stash-name name
+git stash apply #instead of popping it directly applies stashes
+git stash pop #brings out the stashed changes
 ```
