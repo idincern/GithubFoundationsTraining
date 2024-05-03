@@ -59,4 +59,5 @@ Open test OK
 git branch #shows all branches
 git branch dev #creates a new branch named dev
 git checkout dev #changes branch to the dev => first time => git push -u origin dev
+# added git graph extension to the local vscode
 ```
