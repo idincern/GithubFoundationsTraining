@@ -1,6 +1,12 @@
 Press period in your repo to open up web gui codebases.
 
 -> use source control menu in the left panel to see changes. add them to staged changes while commiting just for them. all otherwise.
+## Memo
+```sh
+git add .
+git commit -m "commit memo"
+git push
+```
 
 ## TESTING SH
 ```sh
@@ -52,3 +58,29 @@ git config --global user.email johndoe@example.com
 
 ## Opened github repo in local computer
 Open test OK
+
+
+## Branches
+```sh
+git branch #shows all branches
+git branch dev #creates a new branch named dev
+git checkout dev #changes branch to the dev => first time => git push -u origin dev
+# added git graph extension to the local vscode
+```
+
+## Merging
+```sh
+git checkout dev
+git merge main #merges dev with main-> Makes main up to date. Resolve any conflicts with the main first if there is any.
+```
+
+## Stashing
+Stashing to move staged - unstaged changes in another location => 
+Beware of this in cloud dev. env. because data may be lost.
+```sh
+git stash list #shows stashes
+git stash #stashes all staged changes
+git stash save my-stash-name #stashes all staged changes with the my-stash-name name
+git stash apply #instead of popping it directly applies stashes
+git stash pop #brings out the stashed changes
+```
