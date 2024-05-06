@@ -155,3 +155,5 @@ git pull [remote-name] [branch] #pulls update from a remote branch.
 git fetch [remote-name] #fetch updates without pulling
 ```
 ![alt text](upstream-dwnstream.PNG)
+``downstream`` is pulling/cloning to our local development environment from another remote repo.
+``upstream`` is pushing to a remote repo from our local development environment.
