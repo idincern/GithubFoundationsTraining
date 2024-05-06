@@ -3,13 +3,17 @@
 {
 	"name": "extensions container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/base:alpine-3.19",
+	"image": "mcr.microsoft.com/devcontainers/go:1.22",
 	"customizations": {
 		"vscode": {
 			"extensions": [
 				"mhutchie.git-graph",
 				"phil294.git-log--graph"
 			]
+		}
+		,
+		"features": {
+			"ghcr.io/devcontainers/features/sshd:1": {}
 		}
 	}
 
