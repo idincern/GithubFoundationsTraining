@@ -123,7 +123,7 @@ Branch = Copies of a point in time that have been modified to be different.
 
 Usually there are ``main branch`` and ``production branch``. Development is done in the main branch and sub-main ``feature branch(es)`` and than pushed out to the production branch when ready.
 
-![alt text](<github flow.PNG>)
+![Github merging](<github flow.PNG>)
 ``github flow`` like working is creating a new branch for every update subject and then merging it back to the main/production branch.
 
 ```sh
@@ -155,7 +155,7 @@ git push [remote-name] [branch] #pushes a branch and its commits to the specific
 git pull [remote-name] [branch] #pulls update from a remote branch.
 git fetch [remote-name] #fetch updates without pulling
 ```
-![alt text](upstream-dwnstream.PNG)
+![Upstream and Downstream](upstream-dwnstream.PNG)
 ``downstream`` is pulling/cloning to our local development environment from another remote repo.
 ``upstream`` is pushing to a remote repo from our local development environment.
 
@@ -182,3 +182,6 @@ GitHub has two types of PATS:
     Can only access resources owned by a single user or organization
 Note: Personal Access Tokens is found under Developer Settings
 ```
+
+## GitHub API
+![GitHubAPI](gitubAPI.PNG)
