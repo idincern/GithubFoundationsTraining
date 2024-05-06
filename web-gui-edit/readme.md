@@ -192,3 +192,5 @@ Note: Personal Access Tokens is found under Developer Settings
 **[Github](https://github.com/octokit/octokit.net)** 
 
 **[Docs](https://octokitnet.readthedocs.io/en/latest)**
+
+Video Time: 3:44:28 / 9:54:07
