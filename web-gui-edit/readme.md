@@ -158,3 +158,27 @@ git fetch [remote-name] #fetch updates without pulling
 ![alt text](upstream-dwnstream.PNG)
 ``downstream`` is pulling/cloning to our local development environment from another remote repo.
 ``upstream`` is pushing to a remote repo from our local development environment.
+
+## Deploy Keys
+Allows us to attach public keys directly to a repo.
+### Use Cases
+```sh
+[*] Build servers or CI/CD third-party services that need to clone the repo so they perform a build or deploy.
+[*] Single Repo Access so instead of using a shared key pair for multiple repos you have a single key pair for a single Git repo.
+[*] Avoid using personal account access tokens.
+
+```
+
+### Personal Access Tokens(PAT)
+```sh
+Alternative to using passwords for authentication to GitHub when using the GitHub API or the command line
+GitHub no longer lets you use passwords when interacting with the API
+GitHub has two types of PATS:
+1) Classic tokens:
+    They are less secure and no longer recommended for use customers with legacy systems may be still using classic token.
+2) Fine-grained personal access tokens granted specific permissions:
+    Must have an expiry date
+    Can only access specific repositories
+    Can only access resources owned by a single user or organization
+Note: Personal Access Tokens is found under Developer Settings
+```
