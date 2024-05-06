@@ -3,7 +3,6 @@
 {
 	"name": "extensions container",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/devcontainers/go:1.22",
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -13,7 +12,7 @@
 		}
 		,
 		"features": {
-			"ghcr.io/devcontainers/features/sshd:1": {}
+			"ghcr.io/devcontainers/features/github-cli:1": {}
 		}
 	}
 
