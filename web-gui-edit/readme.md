@@ -143,4 +143,15 @@ git add .
 git commit -m "my relevant changes"
 git push -u origin my-new-branch
 ```
-Video time: 2:48:00
+Note: Video time: 2:48:00
+
+## Remote
+A git remote represents ``the reference to remote location`` where a copy of a repo is hosted.
+``origin`` is mostly the reference remote name that everone uses. 
+Remote entries are stored in ``.git/config``
+```sh
+git push [remote-name] [branch] #pushes a branch and its commits to the specific remote
+git pull [remote-name] [branch] #pulls update from a remote branch.
+git fetch [remote-name] #fetch updates without pulling
+```
+![alt text](upstream-dwnstream.PNG)
