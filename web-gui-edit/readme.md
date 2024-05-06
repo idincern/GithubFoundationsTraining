@@ -123,7 +123,8 @@ Branch = Copies of a point in time that have been modified to be different.
 
 Usually there are ``main branch`` and ``production branch``. Development is done in the main branch and sub-main ``feature branch(es)`` and than pushed out to the production branch when ready.
 
-![alt text](<github flow-1.PNG>)
+![alt text](<github flow.PNG>)
+``github flow`` like working is creating a new branch for every update subject and then merging it back to the main/production branch.
 
 ```sh
 git branch #Lists all local branches 
